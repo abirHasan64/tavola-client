@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^2.0.4",
     "@heroicons/react": "^1.0.6",
+    "@splidejs/splide": "^4.1.4",
+    "@syncfusion/ej2-react-grids": "^25.2.6",
+    "@syncfusion/ej2-react-navigations": "^25.2.6",
     "clsx": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -4,93 +4,42 @@ import img3 from "../../../assets/cover/img3.jpeg";
 import img4 from "../../../assets/cover/img4.jpeg";
 import img5 from "../../../assets/cover/img5.jpeg";
 import img6 from "../../../assets/cover/img6.jpeg";
-import { useEffect, useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const CarouselElement = () => {
-  const [animationDelay, setAnimationDelay] = useState(0); // Initial delay
-
-  // Function to update animation delay
-  useEffect(() => {
-    // Set your desired animation delay in milliseconds
-    const delay = 2000; // 2 seconds
-    const interval = setInterval(() => {
-      setAnimationDelay((prevDelay) => (prevDelay + 1) % 6);
-    }, delay);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div>
-      <div className="carousel h-[800px] w-full">
-        <div
-          id="item1"
-          className={`carousel-item w-full ${
-            animationDelay === 0 ? "animate-slide" : ""
-          }`}
-        >
-          <img src={img1} className="w-full" />
+    <div style={{ position: 'relative' }}>
+      <Carousel
+        autoPlay={true}
+        interval={3000}
+        showArrows={true}
+        showThumbs={false}
+        showStatus={false}
+        infiniteLoop={true}
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: '-1' }}
+      >
+        <div>
+          <img className="h-[1000px]" src={img1} alt="carousel-background" />
         </div>
-        <div
-          id="item2"
-          className={`carousel-item w-full ${
-            animationDelay === 1 ? "animate-slide" : ""
-          }`}
-        >
-          <img src={img2} className="w-full" />
+        <div>
+          <img className="h-[1000px]" src={img2} alt="carousel-background" />
         </div>
-        <div
-          id="item3"
-          className={`carousel-item w-full ${
-            animationDelay === 2 ? "animate-slide" : ""
-          }`}
-        >
-          <img src={img3} className="w-full" />
+        <div>
+          <img className="h-[1000px]" src={img3} alt="carousel-background" />
         </div>
-        <div
-          id="item4"
-          className={`carousel-item w-full ${
-            animationDelay === 3 ? "animate-slide" : ""
-          }`}
-        >
-          <img src={img4} className="w-full" />
+        <div>
+          <img className="h-[1000px]" src={img4} alt="carousel-background" />
         </div>
-        <div
-          id="item5"
-          className={`carousel-item w-full ${
-            animationDelay === 4 ? "animate-slide" : ""
-          }`}
-        >
-          <img src={img5} className="w-full" />
+        <div>
+          <img className="h-[1000px]" src={img5} alt="carousel-background" />
         </div>
-        <div
-          id="item6"
-          className={`carousel-item w-full ${
-            animationDelay === 5 ? "animate-slide" : ""
-          }`}
-        >
-          <img src={img6} className="w-full" />
+        <div>
+          <img className="h-[1000px]" src={img6} alt="carousel-background" />
         </div>
-      </div>
-      <div className="flex justify-center w-full py-2 gap-2">
-        <a href="#item1" className="btn btn-xs">
-          1
-        </a>
-        <a href="#item2" className="btn btn-xs">
-          2
-        </a>
-        <a href="#item3" className="btn btn-xs">
-          3
-        </a>
-        <a href="#item4" className="btn btn-xs">
-          4
-        </a>
-        <a href="#item5" className="btn btn-xs">
-          5
-        </a>
-        <a href="#item6" className="btn btn-xs">
-          6
-        </a>
-      </div>
+      </Carousel>
+      {/* Render the Navbar component */}
+      
     </div>
   );
 };

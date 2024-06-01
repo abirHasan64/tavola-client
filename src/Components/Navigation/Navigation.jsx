@@ -3,8 +3,8 @@ import logo from "../../assets/logo and title icon/logo.jpeg";
 
 const Navigation = () => {
   return (
-    <div className="bg-[#0FA4Af]">
-      <div className="lg:mx-20 text-white p-4">
+    <div className="bg-[#0FA4Af]" style={{ position: 'relative', zIndex: '1' }}>
+      <div className="lg:mx-20 text-white p-1">
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
@@ -65,7 +65,7 @@ const Navigation = () => {
             </div>
             <Link className="flex gap-4">
               <img
-                className="rounded-full w-1/6 lg:w-1/12 lg:rounded-full"
+                className="rounded-full w-1/6 lg:w-1/10 lg:rounded-full"
                 src={logo}
               />
               <div className="my-auto">
@@ -77,7 +77,7 @@ const Navigation = () => {
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 font-semibold text-lg">
+            <ul className="menu menu-horizontal gap-8 px-2 font-semibold text-lg">
               <li>
               <NavLink to='/'>Home</NavLink>
               </li>
