@@ -1,0 +1,7 @@
+.tilt-left {
+    transition: transform 0.3s ease;
+  }
+  
+  .tilt-left:hover {
+    transform: rotate(-10deg);
+  }
