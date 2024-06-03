@@ -3,7 +3,7 @@ import logo from "../../assets/logo and title icon/logo.jpeg";
 
 const Navigation = () => {
   return (
-    <div className="bg-[#0FA4Af]" style={{ position: 'relative', zIndex: '1' }}>
+    <div className="bg-[#0FA4Af] fixed top-0 left-0 w-full z-20">
       <div className="lg:mx-20 text-white p-1">
         <div className="navbar">
           <div className="navbar-start">
@@ -39,19 +39,19 @@ const Navigation = () => {
                   <a>Recipes</a>
                   <ul className="p-2">
                     <li>
-                      <a>Appetizers</a>
+                      <Link to='/food/appetizer'>Appetizers</Link>
                     </li>
                     <li>
-                      <a>Beef</a>
+                      <Link to='/food/beef'>Beef</Link>
                     </li>
                     <li>
-                      <a>Chicken</a>
+                      <Link to='/food/chicken'>Chicken</Link>
                     </li>
                     <li>
-                      <a>Vegetarian</a>
+                      <Link to='/food/vegetarian'>Vegetarian</Link>
                     </li>
                     <li>
-                      <a>Desert</a>
+                      <Link to='/food/dessert'>Desert</Link>
                     </li>
                   </ul>
                 </li>
@@ -86,19 +86,19 @@ const Navigation = () => {
                   <summary>Recipes</summary>
                   <ul className="p-2 w-64 bg-[#0FA4AF] text-white font-semibold">
                     <li>
-                      <a>Appetizers</a>
+                      <Link to='/food/appetizer'>Appetizers</Link>
                     </li>
                     <li>
-                      <a>Beef</a>
+                      <Link to='/food/beef'>Beef</Link>
                     </li>
                     <li>
-                      <a>Chicken</a>
+                      <Link to='/food/chicken'>Chicken</Link>
                     </li>
                     <li>
-                      <a>Vegetarian</a>
+                      <Link to='/food/vegetarian'>Vegetarian</Link>
                     </li>
                     <li>
-                      <a>Desert</a>
+                      <Link to='/food/dessert'>Desert</Link>
                     </li>
                   </ul>
                 </details>
@@ -112,9 +112,9 @@ const Navigation = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <Link className="space-x-8">
-              <button className="btn px-16 text-lg font-bold">Login</button>
-              <button className="btn px-16 text-lg font-bold">Signup</button>
+            <Link className="lg:space-x-8">
+              <button className="btn lg:px-16 text-lg font-bold">Login</button>
+              <button className="btn lg:px-16 text-lg font-bold">Signup</button>
             </Link>
           </div>
         </div>

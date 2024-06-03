@@ -1,12 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-undef */
 import { useState, useEffect } from "react";
 import "./Category.css";
 import { Link } from "react-router-dom";
 
 const Category = () => {
   const [categoryImages, setCategoryImages] = useState([]);
-
   useEffect(() => {
-    fetch("/food.json")
+    fetch("http://localhost:5000/food")
       .then((res) => res.json())
       .then((data) => {
         const images = data.find((item) => item.category_image)
@@ -20,8 +21,9 @@ const Category = () => {
       {categoryImages &&
         Object.keys(categoryImages).map(
           (key, index) =>
+          // console.log(key),
             key !== "id" && (
-              <Link key={index}>
+              <Link to={`/food/${key}`} key={index}>
                 <div key={index} className="flex flex-col items-center lg:px-4">
                   <img
                     src={categoryImages[key]}

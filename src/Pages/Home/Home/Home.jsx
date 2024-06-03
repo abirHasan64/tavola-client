@@ -1,6 +1,7 @@
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 import CarouselElement from "../CarouselElement/CarouselElement";
 import Category from "../Category/Category";
+import ChefQuotes from "../ChefQuotes/ChefQuotes";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         subHeading="Choose a Category"
       />
       <Category />
+      <ChefQuotes />
     </div>
   );
 };
