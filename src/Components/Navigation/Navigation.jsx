@@ -33,30 +33,30 @@ const Navigation = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#0FA4AF] text-white font-semibold rounded-box w-64"
               >
                 <li>
-                  <NavLink to='/'>Home</NavLink>
+                  <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
                   <a>Recipes</a>
                   <ul className="p-2">
                     <li>
-                      <Link to='/food/appetizer'>Appetizers</Link>
+                      <Link to="/food/appetizer">Appetizers</Link>
                     </li>
                     <li>
-                      <Link to='/food/beef'>Beef</Link>
+                      <Link to="/food/beef">Beef</Link>
                     </li>
                     <li>
-                      <Link to='/food/chicken'>Chicken</Link>
+                      <Link to="/food/chicken">Chicken</Link>
                     </li>
                     <li>
-                      <Link to='/food/vegetarian'>Vegetarian</Link>
+                      <Link to="/food/vegetarian">Vegetarian</Link>
                     </li>
                     <li>
-                      <Link to='/food/dessert'>Desert</Link>
+                      <Link to="/food/dessert">Desert</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link>Chefs</Link>
+                  <Link to='/chef'>Chefs</Link>
                 </li>
                 <li>
                   <Link>Contact</Link>
@@ -79,32 +79,32 @@ const Navigation = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal gap-8 px-2 font-semibold text-lg">
               <li>
-              <NavLink to='/'>Home</NavLink>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
                 <details>
                   <summary>Recipes</summary>
                   <ul className="p-2 w-64 bg-[#0FA4AF] text-white font-semibold">
                     <li>
-                      <Link to='/food/appetizer'>Appetizers</Link>
+                      <Link to="/food/appetizer">Appetizers</Link>
                     </li>
                     <li>
-                      <Link to='/food/beef'>Beef</Link>
+                      <Link to="/food/beef">Beef</Link>
                     </li>
                     <li>
-                      <Link to='/food/chicken'>Chicken</Link>
+                      <Link to="/food/chicken">Chicken</Link>
                     </li>
                     <li>
-                      <Link to='/food/vegetarian'>Vegetarian</Link>
+                      <Link to="/food/vegetarian">Vegetarian</Link>
                     </li>
                     <li>
-                      <Link to='/food/dessert'>Desert</Link>
+                      <Link to="/food/dessert">Desert</Link>
                     </li>
                   </ul>
                 </details>
               </li>
               <li>
-                <a>Chefs</a>
+                <Link to='/chef'>Chefs</Link>
               </li>
               <li>
                 <a>Contact</a>
@@ -113,7 +113,9 @@ const Navigation = () => {
           </div>
           <div className="navbar-end">
             <Link className="lg:space-x-8">
-              <button className="btn lg:px-16 text-lg font-bold">Login</button>
+              <button className="btn mr-4 lg:px-16 text-lg font-bold">
+                Login
+              </button>
               <button className="btn lg:px-16 text-lg font-bold">Signup</button>
             </Link>
           </div>
