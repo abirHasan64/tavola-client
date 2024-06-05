@@ -39,27 +39,27 @@ const Navigation = () => {
                   <a>Recipes</a>
                   <ul className="p-2">
                     <li>
-                      <Link to="/food/appetizer">Appetizers</Link>
+                      <NavLink to="/food/appetizer">Appetizers</NavLink>
                     </li>
                     <li>
-                      <Link to="/food/beef">Beef</Link>
+                      <NavLink to="/food/beef">Beef</NavLink>
                     </li>
                     <li>
-                      <Link to="/food/chicken">Chicken</Link>
+                      <NavLink to="/food/chicken">Chicken</NavLink>
                     </li>
                     <li>
-                      <Link to="/food/vegetarian">Vegetarian</Link>
+                      <NavLink to="/food/vegetarian">Vegetarian</NavLink>
                     </li>
                     <li>
-                      <Link to="/food/dessert">Desert</Link>
+                      <NavLink to="/food/dessert">Desert</NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to='/chef'>Chefs</Link>
+                  <NavLink to='/chef'>Chefs</NavLink>
                 </li>
                 <li>
-                  <Link>Contact</Link>
+                  <NavLink to='/contact'>Contact</NavLink>
                 </li>
               </ul>
             </div>
@@ -86,28 +86,28 @@ const Navigation = () => {
                   <summary>Recipes</summary>
                   <ul className="p-2 w-64 bg-[#0FA4AF] text-white font-semibold">
                     <li>
-                      <Link to="/food/appetizer">Appetizers</Link>
+                      <NavLink to="/food/appetizer">Appetizers</NavLink>
                     </li>
                     <li>
-                      <Link to="/food/beef">Beef</Link>
+                      <NavLink to="/food/beef">Beef</NavLink>
                     </li>
                     <li>
-                      <Link to="/food/chicken">Chicken</Link>
+                      <NavLink to="/food/chicken">Chicken</NavLink>
                     </li>
                     <li>
-                      <Link to="/food/vegetarian">Vegetarian</Link>
+                      <NavLink to="/food/vegetarian">Vegetarian</NavLink>
                     </li>
                     <li>
-                      <Link to="/food/dessert">Desert</Link>
+                      <NavLink to="/food/dessert">Desert</NavLink>
                     </li>
                   </ul>
                 </details>
               </li>
               <li>
-                <Link to='/chef'>Chefs</Link>
+                <NavLink to='/chef'>Chefs</NavLink>
               </li>
               <li>
-                <a>Contact</a>
+                <NavLink to='/contact'>Contact</NavLink>
               </li>
             </ul>
           </div>

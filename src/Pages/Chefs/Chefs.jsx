@@ -1,12 +1,13 @@
 import { useLoaderData } from "react-router-dom";
 import ChefCarousel from "./ChefCarousel";
+import ChefCards from "./ChefCards";
 
 const Chefs = () => {
   const chefData = useLoaderData();
-  console.log(chefData);
   return (
     <div>
       <ChefCarousel />
+      <ChefCards data = {chefData}/>
     </div>
   );
 };
