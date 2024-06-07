@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 const ChefCards = ({ data }) => {
-  console.log(data);
   return (
     <div>
       {data.map((singleChefData, index) => (

@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home/Home";
 import CategoryFood from "../Pages/CategoryFood/CategoryFood";
 import Chefs from "../Pages/Chefs/Chefs";
 import Contact from "../Pages/Contact/Contact";
+import SingleFood from "../Pages/SingleFood/SingleFood";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,12 @@ const router = createBrowserRouter([
         element: <CategoryFood />,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/food/${params.category}`),
+      },
+      {
+        path: "/food/:category/:food",
+        element: <SingleFood />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/food/${params.category}/${params.food}`),
       },
       {
         path: "/chef",

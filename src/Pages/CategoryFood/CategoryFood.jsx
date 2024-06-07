@@ -46,7 +46,7 @@ const CategoryFood = () => {
                   </p>
 
                   <div className="card-actions justify-end">
-                    <Link>
+                    <Link to={`/food/${foodItem.category}/${foodItem.id}`}>
                       <button className="btn transition bg-[#003135] text-white text-lg mt-4 hover:bg-[#0FA4AF] hover:text-white hover:-translate-y-1 hover:scale-110 duration-200 ease-in-out">
                         View Recipe
                       </button>
